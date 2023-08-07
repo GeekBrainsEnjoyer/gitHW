@@ -25,24 +25,24 @@
 //     //     }
 //     // }
 
-//     // static void heapify(int[] array, int heapSize, int rootIndex) {
-//     //     int largest = rootIndex;
-//     //     int leftChild = 2 * rootIndex + 1;
-//     //     int rightChild = 2 * rootIndex + 2;
+    static void heapify(int[] array, int heapSize, int rootIndex) {
+        int largest = rootIndex;
+        int leftChild = 2 * rootIndex + 1;
+        int rightChild = 2 * rootIndex + 2;
 
-//     //     if (leftChild < heapSize && array[leftChild] > array[largest])
-//     //         largest = leftChild;
+        if (leftChild < heapSize && array[leftChild] > array[largest])
+            largest = leftChild;
 
-//     //     if (rightChild < heapSize && array[rightChild] > array[largest])
-//     //         largest = rightChild;
+        if (rightChild < heapSize && array[rightChild] > array[largest])
+            largest = rightChild;
 
-//     //     if (largest != rootIndex) {
-//     //         int temp = array[rootIndex];
-//     //         array[rootIndex] = array[largest];
-//     //         array[largest] = temp;
+        if (largest != rootIndex) {
+            int temp = array[rootIndex];
+            array[rootIndex] = array[largest];
+            array[largest] = temp;
             
-//     //         heapify(array, heapSize, largest);
-//     //     }
+            heapify(array, heapSize, largest);
+        }
 
-//     // }
-// }
+    }
+}
