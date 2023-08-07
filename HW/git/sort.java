@@ -1,15 +1,15 @@
 // package HW.git;
 
-// public class sort {
-//     // public static void main(String[] args) {
-//     //     int[] array = new int[] { 1, 5, 2, 7, 4, 6, 7, 4, 3, 8, 4, 9 };
+public class sort {
+    public static void main(String[] args) {
+        int[] array = new int[] { 1, 5, 2, 7, 4, 6, 7, 4, 3, 8, 4, 9 };
 
-//     //     sort(array);
+        sort(array);
 
-//     //     for (int i = 0; i < array.length; i++) {
-//     //         System.out.print(array[i] + " ");
-//     //     }
-//     // }
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
 
     static void sort(int[] array) {
         for (int i = array.length / 2 - 1; i >= 0; i--) {
