@@ -11,19 +11,19 @@ public class sort {
         }
     }
 
-    static void sort(int[] array) {
-        for (int i = array.length / 2 - 1; i >= 0; i--) {
-            heapify(array, array.length, i);
-        }
+//     // static void sort(int[] array) {
+//     //     for (int i = array.length / 2 - 1; i >= 0; i--) {
+//     //         heapify(array, array.length, i);
+//     //     }
 
-        for (int i = array.length - 1; i >= 0; i--) {
-            int temp = array[0];
-            array[0] = array[i];
-            array[i] = temp;
+//     //     for (int i = array.length - 1; i >= 0; i--) {
+//     //         int temp = array[0];
+//     //         array[0] = array[i];
+//     //         array[i] = temp;
 
-            heapify(array, i, 0);
-        }
-    }
+//     //         heapify(array, i, 0);
+//     //     }
+//     // }
 
 //     // static void heapify(int[] array, int heapSize, int rootIndex) {
 //     //     int largest = rootIndex;
